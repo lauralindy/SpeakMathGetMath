@@ -181,6 +181,7 @@
       }
 
     }
+    return equation
   }
 </script>
 <script>
@@ -373,7 +374,7 @@ if (!('webkitSpeechRecognition' in window)) {
       create_email = false;
       createEmail();
     }
-    $("#MathInput").val(final_transcript);
+    $("#MathInput").val(latexConverter(final_transcript));
   };
 
   recognition.onresult = function(event) {

@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <title>Web Speech API Demo</title>
 <head>
-  <script type="text/javascript" async
+  <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
   <script
@@ -91,8 +91,7 @@
 </style>
 <body>
 <h1 class="center" id="headline">
-  <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
-    Web Speech API</a> Demonstration</h1>
+  Speech Math Get Math</h1>
 
   <div id = latex>
 </div>
@@ -150,10 +149,6 @@
   function wordConverter(word){
     if (word == "power" || word == "Power")
       return "^"
-    else if (word == "end" || word == "End")
-      return "$$"
-    else if (word == "start" || word == "Start")
-      return "$$"
     else if (word == "open" || word == "Open")
       return "("
     else if (word == "close" || word == "Close")
@@ -163,9 +158,27 @@
     else if (word == "closed" || word == "Closed")
       return "}"
     else if (word == "integral" || word == "Integral")
-      return "\int"
+      return "\\int"
     else if (word == "under" || word == "Under")
       return "_"
+    else if (word == "less" || word == "Less")
+      return "<"
+    else if (word == "lesser" || word == "Lesser")
+      return "\\leq"
+    else if (word == "greater" || word == "Greater")
+      return ">"
+    else if (word == "great" || word == "great")
+      return "\\geq"
+    else if (word == "fraction" || word == "Fraction")
+      return "\\frac"
+    else if (word == "infinity" || word == "Infinity")
+      return "\\infty"
+    else if (word == "plus" || word == "Plus")
+      return "+"
+    else if (word == "four" || word == "for")
+      return "4"
+    else if (word == "why")
+      return "y"
   }
 </script>
 <script>
@@ -174,10 +187,12 @@
     var equation = ""
     for ( var i = 0; i< words.length; i++){
       console.log(words[i]);
-      if (words[i].length > 1){
-        equation += wordConverter(words[i]);}
+      if (words[i].length > 1 ){
+        equation += wordConverter(words[i])
+        equation += " "}
       else{
         equation += words[i];
+        equation += " "
       }
 
     }
@@ -209,7 +224,7 @@
     }
   })();
 </script>
-<p hidden>
+<p >
 <input type = "text" id="MathInput" size="80" />
 </p>
 <script>
@@ -223,7 +238,7 @@
     }
   }
 </script>
-<p>You said:</p>
+<p>Your Generated Latex :</p>
 <div style = "height:200px width:200px">
 <div class="box" id="box" style="visibility:hidden">
 <div id="MathOutput" class="output">$${}$$</div></div>
@@ -385,7 +400,7 @@ if (!('webkitSpeechRecognition' in window)) {
         interim_transcript += event.results[i][0].transcript;
       }
     }
-    final_transcript = capitalize(final_transcript);
+    final_transcript = (final_transcript);
     final_span.innerHTML = linebreak(final_transcript);
     interim_span.innerHTML = linebreak(interim_transcript);
     if (final_transcript || interim_transcript) {

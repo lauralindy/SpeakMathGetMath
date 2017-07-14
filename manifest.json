@@ -1,0 +1,14 @@
+{
+  "name": "Speak Math, Get Math",
+  "description": "Say an equation, and get it back in LaTex form",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "Say a math equation out loud!",
+    "default_icon": "mic.png",
+    "default_popup": "templates/home.html"
+  },
+  "manifest_version": 2
+}

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f04521e5-3e2c-4936-b8e5-eb67c5d3fcf0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-    </list>
+    <list default="true" id="f04521e5-3e2c-4936-b8e5-eb67c5d3fcf0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="243" column="51" lean-forward="true" selection-start-line="243" selection-start-column="51" selection-end-line="243" selection-end-column="51" />
+            <state relative-caret-position="326">
+              <caret line="244" column="6" lean-forward="true" selection-start-line="244" selection-start-column="6" selection-end-line="244" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />
@@ -359,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="243" column="51" lean-forward="true" selection-start-line="243" selection-start-column="51" selection-end-line="243" selection-end-column="51" />
+        <state relative-caret-position="326">
+          <caret line="244" column="6" lean-forward="true" selection-start-line="244" selection-start-column="6" selection-end-line="244" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#5;n#body#0;n#!!top" expanded="true" />

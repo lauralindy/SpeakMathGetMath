@@ -147,38 +147,53 @@
 </div>
 <script>
   function wordConverter(word){
-    if (word == "power" || word == "Power")
-      return "^"
-    else if (word == "open" || word == "Open")
-      return "("
-    else if (word == "close" || word == "Close")
-      return ")"
-    else if (word == "opened" || word == "Opened")
-      return "{"
-    else if (word == "closed" || word == "Closed")
-      return "}"
-    else if (word == "integral" || word == "Integral")
-      return "\\int"
-    else if (word == "under" || word == "Under")
-      return "_"
-    else if (word == "less" || word == "Less")
-      return "<"
-    else if (word == "lesser" || word == "Lesser")
-      return "\\leq"
-    else if (word == "greater" || word == "Greater")
-      return ">"
-    else if (word == "great" || word == "great")
-      return "\\geq"
-    else if (word == "fraction" || word == "Fraction")
-      return "\\frac"
-    else if (word == "infinity" || word == "Infinity")
-      return "\\infty"
-    else if (word == "plus" || word == "Plus")
-      return "+"
-    else if (word == "four" || word == "for")
-      return "4"
-    else if (word == "why")
-      return "y"
+    if (word == "power" || word == "Power") return "^"
+    else if (word == "open" || word == "Open") return "("
+    else if (word == "close" || word == "Close") return ")"
+    else if (word == "opened" || word == "Opened") return "{"
+    else if (word == "closed" || word == "Closed")  return "}"
+    else if (word == "integral" || word == "Integral") return "\\int"
+    else if (word == "under" || word == "Under") return "_"
+    else if (word == "less" || word == "Less") return "<"
+    else if (word == "lesser" || word == "Lesser") return "\\leq"
+    else if (word == "greater" || word == "Greater") return ">"
+    else if (word == "great" || word == "great") return "\\geq"
+    else if (word == "fraction" || word == "Fraction") return "\\frac"
+    else if (word == "infinity" || word == "Infinity") return "\\infty"
+    else if (word == "plus" || word == "Plus") return "+"
+    else if (word == "four" || word == "for") return "4"
+    else if (word == "why") return "y"
+    else if(word == "ex") return "x";
+    else if(word == "alpha") return "\\alpha";
+    else if(word == "beta") return "\\beta";
+    else if(word == "gamma") return "\\gamma";
+    else if(word == "delta") return "\\delta";
+    else if(word == "epsilon") return "\\epsilon";
+    else if(word == "zeta") return "\\zeta";
+    else if(word == "eta") return "\\eta";
+    else if(word == "theta") return "\\theta";
+    else if(word == "iota") return "\\iota";
+    else if(word == "kappa") return "\\kappa";
+    else if(word == "lambda") return "\\lambda";
+    else if(word == "mu"): return "\\mu";
+    else if(word == "nu") return "\\nu";
+    else if(word == "omicron") return "\\omicron";
+    else if(word == "pi") return "\\pi";
+    else if(word == "rho" or word == "row) return "\\rho";
+    else if(word == "sigma") return "\\sigma";
+    else if(word == "tau") return "\\tau";
+    else if(word == "phi") return "\\phi";
+    else if(word == "chi") return "\\chi";
+    else if(word == "psi") return "\\psi";
+    else if(word == "omega") return "\\omega";
+    else if (word == "cross" or word == "Cross") return "\\times"
+    else if (word == "all" or word == "All") return "\\forall"
+    else if (word == "exists" or word == "Exists") return "\\exists"
+    else if (word == "pim" or word == "Pim") return "\\pm"
+    else if (word == "negated" or word == "Negated") return "\\neq"
+    else if (word == "in" or word == "In") return "\\in"
+    else if (word == "not" or word == "Not") return "\\neg"
+    else if (word == "net" or word == "Net") return "\\notin"
   }
 </script>
 <script>
